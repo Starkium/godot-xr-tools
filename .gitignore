@@ -2,6 +2,10 @@
 *.os
 .import/
 .godot/
+android/
+*android/build/config.gradle
+*android/build/gradle.properties
+*android/build/gradle/wrapper/gadle-wrapper.properties
 *.dblite
 *.exp
 *.lib
@@ -10,3 +14,4 @@
 logs
 Thumbs.db
 android/
+export_presets.cfg

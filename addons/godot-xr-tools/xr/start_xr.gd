@@ -70,7 +70,7 @@ func initialize() -> bool:
 	# No XR interface
 	xr_interface = null
 	print("No XR interface detected")
-	return false
+	return false # could do a non vr set up here
 
 
 # Check for configuration issues
@@ -214,7 +214,9 @@ func _on_webxr_session_supported(session_mode: String, supported: bool) -> void:
 			$EnterWebXR.visible = true
 		else:
 			OS.alert("Your web browser doesn't support VR. Sorry!")
-
+			
+# Hmm why would we want a button separate from our own UI interface?
+# Is this forced to be this way?
 
 # Called when the WebXR session has started successfully
 func _on_webxr_session_started() -> void:
